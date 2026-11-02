@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="login-page">
+
+        <div class="login-container">
+            <h1>Please Sign in</h1>
+
+            <form action="#" method="post">
+
+                <div class="input-group">
+                    <input
+                        type="text"
+                        name="student"
+                        placeholder="Email Address"
+                        aria-label="Email Address or Student's Admission Number"
+                        required
+                    >
+                </div>
+
+                <div class="input-group password-group">
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Password"
+                        aria-label="Password"
+                        required
+                    >
+                    <button
+                        type="button"
+                        class="eye-icon"
+                        onclick="togglePassword()"
+                        aria-label="Show or hide password"
+                    >◉</button>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="login-btn">
+                        LOGIN
+                    </button>
+
+                    <a href="#" class="forgot-password">
+                        Forgot Password?
+                    </a>
+                </div>
+
+            </form>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2026 Kara B's Prestige Touch.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        function togglePassword() {
+            const password = document.getElementById("password");
+
+            password.type =
+                password.type === "password" ? "text" : "password";
+        }
+    </script>
+
+</body>
+</html>
